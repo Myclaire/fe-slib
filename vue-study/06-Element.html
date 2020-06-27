@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <chsy v-for="subject in items" v-bind:mybind="subject"></chsy>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    //定义一个Vue组件component
+    Vue.component("chsy", {
+        props: ['mybind'],
+        template: '<li>{{mybind}}</li>'
+    });
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            items: ["java", "linux", "python"]
+        }
+    });
+</script>
+</html>

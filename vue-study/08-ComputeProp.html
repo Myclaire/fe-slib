@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <p>{{currentTime1()}}</p>
+    <p>{{currentTime2}}</p>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            message: "hello, chsy!"
+        },
+        methods: {
+            currentTime1: function () {
+                return Date.now();
+            }
+        },
+        computed: {//计算属性
+            currentTime2: function () {
+                return Date.now();
+            }
+        }
+    });
+</script>
+</html>

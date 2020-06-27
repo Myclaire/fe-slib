@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<div id="app">
+    <h1 v-if="type==='A'">you are A</h1>
+    <h1 v-else-if="type==='B'">you are B</h1>
+    <h1 v-else>you are C</h1>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            type: 'B'
+        }
+    });
+</script>
+</html>

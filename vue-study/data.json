@@ -1,0 +1,21 @@
+{
+  "name": "沧海随云",
+  "url": "http://zhcheng.club",
+  "page": 1,
+  "isNonProfit": true,
+  "address": {
+    "street": "南薰镇",
+    "city": "资阳市",
+    "country": "中国"
+  },
+  "links": [
+    {
+      "name": "bilibili",
+      "url": "https://bilibili.com"
+    },
+    {
+      "name": "chsy",
+      "url": "https://www.cnblogs.com/zcl-blog/"
+    }
+  ]
+}
